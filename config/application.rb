@@ -19,5 +19,7 @@ module PlatanusStats
 
     config.active_job.queue_adapter = :delayed_job
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
+    config.autoload_paths << "#{Rails.root}/app/services"
   end
 end
