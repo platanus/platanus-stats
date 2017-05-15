@@ -21,5 +21,14 @@ module PlatanusStats
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
 
     config.autoload_paths << "#{Rails.root}/app/services"
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address: 'smtp.sendgrid.net',
+      port: 587,
+      domain: 'platan.us',
+      user_name: 'apikey',
+      password: ENV['SENDGRID_API_KEY']
+    }
   end
 end
