@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Estadística de Toggl de ayer</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Developer</th>
+          <th>Horas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @stats.each do |stat| %>
+        <tr>
+          <td><%= stat[0] %></td>
+          <td><%= stat[1].round(2) %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>
