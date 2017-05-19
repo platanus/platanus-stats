@@ -1,0 +1,15 @@
+$day-slot-size: 20px;
+$day-slot-default-color: green;
+$day-slot-hover-color: gray;
+
+.day-slot {
+  background-color: $day-slot-default-color;
+  float: left;
+  width: $day-slot-size;
+  height: $day-slot-size;
+  border: 1px solid grey;
+
+  &--selected {
+    opacity: 0.2;
+  }
+}

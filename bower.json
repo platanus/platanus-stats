@@ -1,4 +1,9 @@
 {
   "name": "Platanus-stats",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "vue": "^2.3.3",
+    "moment": "^2.18.1",
+    "lodash": "^4.17.4"
+  }
 }

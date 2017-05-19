@@ -10,7 +10,21 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+// require jquery
+// require jquery_ujs
+// require turbolinks
+//= require vue/dist/vue
+//= require moment/min/moment-with-locales
+//= require lodash/dist/lodash
+//= require_tree ./app/
+
+
+window.onload = function () {
+  app = new Vue({
+    el: '#app',
+    data: {
+      startDate: '2017-01-01',
+      endDate: '2017-03-03',
+    }
+  })
+}

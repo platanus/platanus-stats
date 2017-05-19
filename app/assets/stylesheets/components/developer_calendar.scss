@@ -1,0 +1,39 @@
+$developer-calendar-title-size: 22px;
+
+.developer-calendar {
+  &__hour-row {
+    clear: both;
+  }
+
+  &__months {
+    clear: both;
+  }
+
+  &__month {
+    float: left;
+    width: $developer-calendar-title-size * 5;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  &__days {
+    clear: both;
+    font-size: 9px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 9px;
+  }
+
+  &__day {
+    float: left;
+    width: $developer-calendar-title-size;
+
+    &--important {
+      font-weight: bold;
+    }
+  }
+
+  &__weekday {
+    line-height: 9px;
+  }
+}
